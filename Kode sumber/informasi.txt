@@ -1,0 +1,124 @@
+daftar states:
+q0  start_state
+q1  menambah 'o' di 1 dan 'x' di input user
+q2  menambah 'o' di 8 dan 'x' di input user
+q3  menambah 'o' di 7 dan 'x' di input user
+q4  menambah 'o' di 6 dan 'x' di input user
+q5  menambah 'o' di 4 dan 'x' di input user
+q6  menambah 'o' di 3 dan 'x' di input user
+q7  menambah 'o' di 2 dan 'x' di input user
+q8  menambah 'o' di 7 dan 'x' di input user
+q9  menambah 'o' di 6 atau 8 dan 'x' di input user
+q10 menambah 'o' di 4 dan 'x' di input user
+q11 menambah 'o' di 3 atau 8 dan 'x' di input user
+q12 menambah 'o' di 7 dan 'x' di input user
+q13 final menambah 'o' di 4 dan 'x' di input user
+q14 final menambah 'o' di 2 dan 'x' di input user
+q15 menambah 'o' di 7 atau 6 dan 'x' di input user
+q16 final menambah 'o' di 3 dan 'x' di input user
+q17 menambah 'o' di 3 dan 'x' di input user
+q18 menambah 'o' di 2 dan 'x' di input user
+q19 menambah 'o' di 3 dan 'x' di input user
+q20 final menambah 'o' di 7 dan 'x' di input user
+q21 final menambah 'o' di 4 dan 'x' di input user
+q22 final menambah 'o' di 9 dan 'x' di input user
+q23 final menambah 'x' di input user dan
+    'o' di tempat kosong pertama di matriks dan
+    'x' di tempat kosong selanjutnya di matriks,
+        jika matriks tidak penuh
+q24 final menambah 'x' di input user dan
+    'o' di tempat kosong terakhir di matriks dan
+    'x' di tempat kosong sebelumnya di matriks,
+        jika matriks tidak penuh
+q25 menambah 'o' di 5 dan 3 dan 'x' di input user
+q26 menambah 'o' di 5 dan 3 dan 'x' di input user
+q27 menambah 'o' di 5 dan 1 dan 'x' di input user
+q28 menambah 'o' di 5 dan 1 dan 'x' di input user
+q29 final menambah 'o' di 6 dan 'x' di input user
+q30 menambah 'o' di 5 dan 1 dan 'x' di input user
+q31 final menambah 'o' di 1 dan 'x' di input user
+q32 menambah 'o' di 5 dan 3 dan 'x' di input user
+q33 menambah 'o' di 7 dan 'x' di input user
+q34 menambah 'o' di 1 dan 'x' di input user
+q35 menambah 'o' di 9 dan 'x' di input user
+q36 menambah 'o' di 6 dan 'x' di input user
+q37 menambah 'o' di 3 dan 'x' di input user
+q38 menambah 'o' di 8 dan 'x' di input user
+q39 menambah 'o' di 8 dan 'x' di input user
+q40 menambah 'o' di 8 dan 'x' di input user
+q41 menambah 'o' di 6 dan 'x' di input user
+q42 menambah 'o' di 4 dan 'x' di input user
+q43 state buangan
+~~~
+daftar simbol:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+~~~
+state awal:
+q0
+~~~
+state akhir:
+q13
+q14
+q16
+q20
+q21
+q22
+q23
+q24
+q29
+q31
+~~~
+transisition function:
+q0 q25 q26 q27 q28 q1 q28 q30 q26 q32
+q1 q43 q2 q3 q4 q43 q5 q6 q7 q6
+q2 q43 q43 q8 q9 q43 q10 q11 q43 q12
+q3 q43 q13 q43 q15 q43 q13 q43 q13 q13
+q4 q43 q9 q15 q43 q43 q43 q17 q18 q19
+q5 q43 q20 q20 q43 q43 q43 q17 q20 q20
+q6 q43 q11 q43 q14 q43 q14 q14 q14 q14
+q7 q43 q43 q33 q16 q43 q16 q16 q43 q16
+q8 q43 q43 q43 q22 q43 q21 q43 q43 q21
+q9 q43 q43 q23 q43 q43 q43 q23 q43 q23
+q10 q43 q43 q20 q43 q43 q43 q23 q43 q20
+q11 q43 q43 q43 q23 q43 q23 q23 q43 q23
+q12 q43 q43 q21 q24 q43 q21 q43 q43 q43
+q13 q43 q43 q43 q43 q43 q43 q43 q43 q43
+q14 q43 q43 q43 q43 q43 q43 q43 q43 q43
+q15 q43 q23 q43 q43 q43 q43 q43 q23 q24
+q16 q43 q43 q43 q43 q43 q43 q43 q43 q43
+q17 q43 q23 q43 q43 q43 q43 q43 q14 q14
+q18 q43 q43 q23 q43 q43 q43 q16 q43 q16
+q19 q43 q24 q43 q23 q43 q21 q14 q14 q21
+q20 q43 q43 q43 q43 q43 q43 q43 q43 q43
+q21 q43 q43 q43 q43 q43 q43 q43 q43 q43
+q22 q43 q43 q43 q43 q43 q43 q43 q43 q43
+q23 q43 q43 q43 q43 q43 q43 q43 q43 q43
+q24 q43 q43 q43 q43 q43 q43 q43 q43 q43
+q25 q43 q20 q43 q20 q43 q20 q34 q20 q20
+q26 q20 q20 q43 q20 q43 q20 q35 q20 q20
+q27 q43 q22 q43 q22 q43 q22 q22 q22 q36
+q28 q43 q22 q22 q22 q43 q22 q22 q22 q37
+q29 q43 q43 q43 q43 q43 q43 q43 q43 q43
+q30 q43 q22 q22 q22 q43 q22 q43 q22 q38
+q31 q43 q43 q43 q43 q43 q43 q43 q43 q43
+q32 q20 q20 q43 q20 q43 q20 q39 q20 q43
+q33 q43 q43 q43 q23 q43 q21 q43 q43 q21
+q34 q43 q29 q43 q43 q43 q40 q43 q29 q29
+q35 q29 q29 q43 q29 q43 q31 q43 q31 q43
+q36 q43 q21 q43 q40 q43 q43 q21 q21 q43
+q37 q43 q20 q43 q20 q43 q20 q14 q14 q43
+q38 q43 q41 q14 q14 q43 q14 q43 q43 q43
+q39 q14 q42 q43 q14 q43 q14 q43 q43 q43
+q40 q43 q23 q43 q43 q43 q43 q14 q43 q14
+q41 q43 q43 q13 q24 q43 q43 q43 q43 q43
+q42 q29 q43 q43 q43 q43 q24 q43 q43 q43
+q43 q43 q43 q43 q43 q43 q43 q43 q43 q43
+~~~
